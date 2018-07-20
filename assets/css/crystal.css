@@ -1,0 +1,48 @@
+body {
+    background: url(../images/lights\ copy.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+}
+
+/*jumbotron*/
+.jumbotron {
+    text-align: center;
+    color: lavender;
+    text-shadow: 2px 2px 2px gray;
+    font-family: 'Henny Penny', cursive;
+    font-size: 30%;
+    font-weight: bold;
+}
+
+/*instructions*/
+.card {
+    color: lightpink;
+    font-family: 'Atma', cursive;
+}
+.wins {
+    text-align: center;
+    color: white;
+    background-color:lightgrey;
+    font-size: 30px;
+    font-family: 'Metamorphous', cursive;
+}
+.mid-box {
+    color: lightgrey;
+    background-color: whitesmoke;
+    font-size: 30px;
+    font-family: 'Metamorphous', cursive;
+}
+
+/*numbers you guess*/
+
+
+/*wins or losses*/
+
+
+/*total score*/
+
+
+/*crystals*/
+
