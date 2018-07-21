@@ -10,7 +10,7 @@ body {
 .jumbotron {
     text-align: center;
     color: lavender;
-    text-shadow: 2px 2px 2px gray;
+    text-shadow: 2px 2px 5px gray;
     font-family: 'Henny Penny', cursive;
     font-size: 30%;
     font-weight: bold;
@@ -29,7 +29,7 @@ body {
     font-family: 'Metamorphous', cursive;
 }
 .mid-box {
-    color: lightgrey;
+    color: gray;
     background-color: whitesmoke;
     font-size: 30px;
     font-family: 'Metamorphous', cursive;
@@ -46,3 +46,12 @@ body {
 
 /*crystals*/
 
+
+/*Footer*/
+.footer-fluid {
+    text-align: center;
+    background-color: white;
+    color: gray;
+    font-family: 'Metamorphous', cursive;
+    font-size: 30px;
+}
