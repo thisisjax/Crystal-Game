@@ -10,7 +10,7 @@ body {
 .jumbotron {
     text-align: center;
     color: lavender;
-    text-shadow: 2px 2px 5px gray;
+    text-shadow: 3px 3px 5px gray;
     font-family: 'Henny Penny', cursive;
     font-size: 30%;
     font-weight: bold;
@@ -20,6 +20,20 @@ body {
 .card {
     color: lightpink;
     font-family: 'Atma', cursive;
+}
+#guess {
+    text-align: center;
+    color: lightpink;
+    font-family: 'Atma', cursive;
+    font-size: 50px;
+    
+}
+#score {
+    text-align: center;
+    color: lightpink;
+    font-family: 'Atma', cursive;
+    font-size: 50px;
+    
 }
 .wins {
     text-align: center;
