@@ -9,10 +9,10 @@ body {
 /*jumbotron*/
 .jumbotron {
     text-align: center;
-    color: lavender;
+    color: white;
     text-shadow: 3px 3px 5px gray;
     font-family: 'Henny Penny', cursive;
-    font-size: 30%;
+    font-size: 60px;
     font-weight: bold;
 }
 
@@ -42,7 +42,27 @@ body {
     font-size: 30px;
     font-family: 'Metamorphous', cursive;
 }
-.mid-box {
+#numGuess {
+    text-align: center;
+    color: white;
+    background-color:lightgrey;
+    font-size: 30px;
+    font-family: 'Metamorphous', cursive;
+}
+#currentScore {
+    text-align: center;
+    color: white;
+    background-color:lightgrey;
+    font-size: 30px;
+    font-family: 'Metamorphous', cursive;
+}
+#win-box {
+    color: gray;
+    background-color: whitesmoke;
+    font-size: 30px;
+    font-family: 'Metamorphous', cursive;
+}
+#loss-box {
     color: gray;
     background-color: whitesmoke;
     font-size: 30px;
