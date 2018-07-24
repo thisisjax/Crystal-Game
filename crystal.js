@@ -1,69 +1,30 @@
+var randomDiamond;
+var losses;
+var wins;
+//4 Diamonds that produce random results
+for (var i = 0; i < 4; i++){
+//Every diamond will have a random number between 1-12
+    var random = Math.floor(Math.random() * 12);
+    console.log(random);
 
-//Random diamonds Numbers
-var diamondRandom = [Math.floor(Math.random()* 12) +1];
-//Hide diamonds variables
+    var diamonds = $("<div>");
+    diamonds.attr("class", 'diamonds');
 
-//Guess
-var guess = 0;
-$("#guess").text(guess);
-//Score
-var score = 0;
-$("#score").text(score);
-console.log("Current Score is: " + score);
-//Computer random guess
-var guessRandom = [Math.floor(Math.random()* 101) +19];
-//Shows score on page
-$("#guess").text(guessRandom);
-console.log("Guessed Number is: " + guess);
-//Win Box
-var winBox = [];
-$("#win-box").text(wins);
-console.log("Number of wins: " + wins);
-//Loss Box
-var lossBox = [];
-$("#loss-box").text(losses);
-console.log("Number of losses: " + losses);
-//Win function
-function wins() {
-    wins++;
-    $("#win-box").text(wins);
-}
-//Loss function
-function losses() {
-    losses++;
-    $("#loss-box").text(losses);
+    $(".diamonds").append(diamonds)
 }
 
 
-//Create a loop for each crytal
-for (var i = 0; i < guessRandom.length; i++){
 
-}
-//Create a Loop for Each crytasal
-for (var i = 0; i < diamondVar.length; i++) {
-//Give Img variable
-var imageDiamond = $("<img>");
-}
-//Buttons
-// $(document).ready(function(){
-    // $("button").click(function(){
-        // $("p").text("Hello World!")
-    // });
-// });
-$("#button1").on("click", function(){
-    score = parseInt(score) + parseInt(diamond1);
-    $()
-}
-$("#button2").on("click", function(){}
-$("#button3").on("click", function(){}
-$("#button4").on("click", function(){}
+//Every diamond will have a random number between 1-12
 
-//Declare Winn
-if (guessRandom === score) {
-    wins();
-    console.log("You Won!")
-}
-else if (guessRandom < score) {
-    losses();
-    console.log("You Lose!")
-}
+//A new random number will generate every time we win or lose
+
+//to those diamonds
+
+//When clicking on the diamonds, it should add to the previous result
+
+//Until it equals the random result
+
+//If it is greater than the random result, we decrement the lost counter
+
+//If it is equal then we increment the win counter
