@@ -11,21 +11,21 @@ var resetAndStartGame = function () {
 
     //Guess will generate a new random number
 
-    // $(("#guess").html("<h2>randomDiamond</h2>"));
+    $("#guess").html("<h2>" + randomDiamond + "</h2>");
 
     //4 Diamonds that produce random results
     for (var i = 0; i < 4; i++) {
 
         //Every diamond will have a random number between 1-12
         var random = Math.floor(Math.random() * 12);
-        console.log(random);
+        console.log("this is a number" + random);
 
         var diamonds = $("<div>");
         diamonds.attr({
             "class": 'diamonds',
             "data-random": random
         });
-
+        console.log("diamond object" +  diamonds);
         $(".diamonds").append(diamonds)
     }
 }
@@ -38,23 +38,24 @@ var reset = function () {
 
 //When clicking on the diamonds, it should add to the previous result Until it equals the random result
 $(document).on('click', ".diamonds", function () {
-    var num = parseInt($(this).attr('data-random'));
-    console.log(score);
+    var num = $(this).attr('data-random');
+    console.log("this is the variable" + num);
 
     score += num;
-
+    $("#score").text(score);
+    console.log(score);
 
     //If it is greater than the random result, we decrement the lost counter
     if (score > randomDiamond) {
-        loss--;
-        $("#loss").html(loss);
+        loss++;
+        $("#loss").text(loss);
         score = 0 ;
         resetAndStartGame();
     }
     //If it is equal then we increment the win counter
     else if (score === randomDiamond) {
         win++;
-        $("#win").html(win);
+        $("#win").text(win);
         score = 0 ;
         resetAndStartGame();
     }
